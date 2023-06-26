@@ -7,15 +7,6 @@ export default function About(){
                 <div className='flex-auto w-64'>
                     <h1 class="font-bold text-4xl">Página de sobre</h1>
                 </div>
-                <div className='flex-auto w-64'>
-                    <ul class="grid grid-cols-1 gap-2">
-                        <li>
-                            <Link href="/">
-                                Voltar
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
             </header>
             <main>
                 <h1 lass="font-bold text-4xl">Where does it come from?</h1>

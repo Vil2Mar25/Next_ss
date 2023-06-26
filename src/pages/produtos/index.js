@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import NavProd from '../../../components/NavProd'
 export default function Index(){
     return (
         <div class="container mx-auto">
@@ -6,25 +7,7 @@ export default function Index(){
                 <div className='flex-auto w-64'>
                     <h1 class="font-bold text-4xl">Página de produtos</h1>
                 </div>
-                <div className='flex-auto w-64'>
-                    <ul className="grid grid-cols-3 gap-2">
-                        <li>
-                            <Link href="/">
-                                Voltar
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="produtos/pants/bluepants">
-                                Calças azuis
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="produtos/pants/redpants">
-                                Calças vermelhas
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
+                <NavProd />
             </header>
             <main>
                 <h1 lass="font-bold text-4xl">Where does it come from?</h1>

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,20 +9,6 @@ export default function Home() {
       <header class="bg-red-300 text-white px-4 py-5 flex w-75 align-items-center justify-around">
         <div className='flex-auto w-64'>
           <h1 class="font-bold text-4xl">Página principal</h1>
-        </div>
-        <div className='flex-auto w-64'>
-          <ul className="grid grid-cols-2 gap-2">
-            <li>
-              <Link href="/produtos">
-                Produtos
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
-                Sobre
-              </Link>
-            </li>
-          </ul>
         </div>
       </header>
       <main>
