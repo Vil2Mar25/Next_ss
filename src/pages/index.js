@@ -1,23 +1,60 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Head from 'next/head';
+
+import styles from '../styles/Paginas.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div class="container mx-auto">
-      <header class="bg-red-300 text-white px-4 py-5 flex w-75 align-items-center justify-around">
-        <div className='flex-auto w-64'>
-          <h1 class="font-bold text-4xl">Página principal</h1>
-        </div>
-      </header>
-      <main>
-        <h1 lass="font-bold text-4xl">Where does it come from?</h1>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-      </main>
-    </div>
+    <>
+      <Head>
+        <title>Home</title>    
+      </Head>
+      <div className="container mx-auto">
+        <header className="bg-red-300 text-white px-4 py-5 flex w-75 align-items-center justify-around">
+          <div className='flex-auto w-64'>
+            <h1 className="font-bold text-4xl">Bem-vindo ao petshop Amuara</h1>
+          </div>
+        </header>
+        <main className={styles.main}>
+          <p className='mt-2 mb-2'>Atuamos em <b>Ribeirão Preto</b> e região levando cuidado e conforto para o seu pet. Venha nos fazer uma visita!</p>
+
+          <p className='mt-2 mb-2'>Localização principal:
+          <ul>
+            <li>
+              CEP: 14015-040
+            </li>
+            <li>
+              Rua: São Sebastião
+            </li>
+            <li>
+              Bairro: Centro
+            </li>
+            <li>
+              Cidade: Ribeirão Preto
+            </li>
+            <li>
+              Estado: São Paulo
+            </li>
+          </ul>
+          </p>
+          <Image
+          src="/var/www/html/hello_video/src/assets/img/mapa.png"
+          width={500}
+          height={500}
+          alt="mapa de ribeirão preto"
+          />
+
+          <p className='mt-2 mb-2'>Em nossas lojas, temos os cuidados voltados para:</p>
+
+          <p className='mt-2 mb-2'>Gatos</p>
+          <p className='mt-2 mb-2'>Cachorros</p>
+          <p className='mt-2 mb-2'>Aves</p>
+
+        </main>
+      </div>
+    </>
   )
 }

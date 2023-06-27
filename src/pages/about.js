@@ -1,20 +1,30 @@
-import Link from 'next/link'
+import Head from 'next/head'
+
+import styles from '../styles/Paginas.module.css'
 
 export default function About(){
     return (
-        <div class="container mx-auto">
-            <header class="bg-red-300 text-white px-4 py-5 flex w-75 align-items-center justify-around">
-                <div className='flex-auto w-64'>
-                    <h1 class="font-bold text-4xl">Página de sobre</h1>
-                </div>
-            </header>
-            <main>
-                <h1 lass="font-bold text-4xl">Where does it come from?</h1>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-            </main>
-        </div>
+        <>
+            <Head>
+                <title>Sobre nós</title>
+            </Head>
+            <div className="container mx-auto">
+                <header class="bg-red-300 text-white px-4 py-5 flex w-75 align-items-center justify-around">
+                    <div className='flex-auto w-64'>
+                        <h1 className="font-bold text-4xl">Página de sobre</h1>
+                    </div>
+                </header>
+                <main className={styles.main}>
+                    <p className='mt-2 mb-2'>O grupo <strong>Amuara</strong>, uma empresa especializada no ramo de petshop, possui lojas em Ribeirão Preto e região metropolitana de São Paulo. Surgimos em meio a demanda crescente não região por empresas especializadas em cuidado e bem-estar de pets. Nossos profissionais são selecionados visando o atendimentos de alta qualidade e excelência, visando a satisfação dos pets e de seus guardiões.</p>
+                    <p className='mt-2 mb-2'>Venha conhecer uma de nossas lojas mais próxima de sua residência. Você pode acompanhar os depois de nossos clientes na seção a seguir:</p>
+                    <p className='mt-2 mb-2'>Cliente fulano002: Atendimento perfeito</p>
+                    <p className='mt-2 mb-2'>Cliente fulano005: Atendimento perfeito</p>
+                    <p className='mt-2 mb-2'>Cliente fulano006: Atendimento perfeito</p>
+                    <p className='mt-2 mb-2'>Cliente fulano016: Atendimento perfeito</p>
+                    <p className='mt-2 mb-2'>Cliente fulano029: Atendimento perfeito</p>
+
+                </main>
+            </div>
+        </>
     )
 }

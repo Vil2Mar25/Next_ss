@@ -1,0 +1,17 @@
+.navbar{
+    display:flex;
+    background-color: #000;
+    padding: 20px 10px;
+
+    color: #FFF;
+}
+
+.li{
+    margin-right: 1em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.li:hover{
+    color: #999;
+}
