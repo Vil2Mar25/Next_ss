@@ -1,4 +1,21 @@
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 86px;
+  width: auto;
+
+  background-image: url('/assets/images/plantas.jpg');
+
+  color: #f1eeee;
+}
 .main{
   background-color: #e7e0e0;
   padding: 50px;
+}
+
+.centaliza_imagem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
